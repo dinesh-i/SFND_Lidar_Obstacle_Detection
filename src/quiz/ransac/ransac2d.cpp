@@ -98,7 +98,7 @@ std::unordered_set<int> Ransac(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, int ma
 		float c = (x1*y2 - x2*y1);
 
 		for(int index=0; index < cloud->points.size(); index++){
-			if(inliers.count()index>0)
+			if(inliers.count(index)>0)
 				continue;
 
 			pcl::PointXYZ point = cloud->points[index];
